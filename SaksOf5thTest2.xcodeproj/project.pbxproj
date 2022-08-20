@@ -26,7 +26,10 @@
 		F503AEBF28AD9C2D00588133 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F503AEBE28AD9C2D00588133 /* CartViewController.swift */; };
 		F59B2C2028B0E8790088A308 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59B2C1F28B0E8780088A308 /* Service.swift */; };
 		F59B2C2228B0E89A0088A308 /* MockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59B2C2128B0E89A0088A308 /* MockService.swift */; };
-		F59B2C2428B0E8AD0088A308 /* NetwoekError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59B2C2328B0E8AD0088A308 /* NetwoekError.swift */; };
+		F59B2C2428B0E8AD0088A308 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59B2C2328B0E8AD0088A308 /* NetworkError.swift */; };
+		F59B2C2728B0EE010088A308 /* ItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59B2C2628B0EE010088A308 /* ItemsModel.swift */; };
+		F59B2C2A28B0F44D0088A308 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59B2C2928B0F44D0088A308 /* Global.swift */; };
+		F59B2C2D28B0FFF20088A308 /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59B2C2C28B0FFF20088A308 /* OrderModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +79,10 @@
 		F503AEBE28AD9C2D00588133 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		F59B2C1F28B0E8780088A308 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		F59B2C2128B0E89A0088A308 /* MockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockService.swift; sourceTree = "<group>"; };
-		F59B2C2328B0E8AD0088A308 /* NetwoekError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetwoekError.swift; sourceTree = "<group>"; };
+		F59B2C2328B0E8AD0088A308 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		F59B2C2628B0EE010088A308 /* ItemsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsModel.swift; sourceTree = "<group>"; };
+		F59B2C2928B0F44D0088A308 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		F59B2C2C28B0FFF20088A308 /* OrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +161,8 @@
 		F503AE8328AD8B3600588133 /* SaksOf5thTest2 */ = {
 			isa = PBXGroup;
 			children = (
+				F59B2C2828B0F43C0088A308 /* Utils */,
+				F59B2C2528B0EDE80088A308 /* Models */,
 				F59B2C1E28B0E8550088A308 /* Network */,
 				F59B2C1C28B0E6C10088A308 /* Supporting Files */,
 				F59B2C1B28B0E6B80088A308 /* View */,
@@ -226,9 +234,34 @@
 			children = (
 				F59B2C1F28B0E8780088A308 /* Service.swift */,
 				F59B2C2128B0E89A0088A308 /* MockService.swift */,
-				F59B2C2328B0E8AD0088A308 /* NetwoekError.swift */,
+				F59B2C2328B0E8AD0088A308 /* NetworkError.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		F59B2C2528B0EDE80088A308 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F59B2C2B28B0FFD40088A308 /* responses */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F59B2C2828B0F43C0088A308 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F59B2C2928B0F44D0088A308 /* Global.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F59B2C2B28B0FFD40088A308 /* responses */ = {
+			isa = PBXGroup;
+			children = (
+				F59B2C2628B0EE010088A308 /* ItemsModel.swift */,
+				F59B2C2C28B0FFF20088A308 /* OrderModel.swift */,
+			);
+			path = responses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -475,12 +508,15 @@
 				F503AE8F28AD8B3600588133 /* SaksOf5thTest2.xcdatamodeld in Sources */,
 				F503AEBD28AD9AFC00588133 /* CartItemCollectionViewCell.swift in Sources */,
 				F503AEB828AD8BD000588133 /* ItemTableViewCell.swift in Sources */,
+				F59B2C2A28B0F44D0088A308 /* Global.swift in Sources */,
 				F503AEBF28AD9C2D00588133 /* CartViewController.swift in Sources */,
 				F59B2C2028B0E8790088A308 /* Service.swift in Sources */,
 				F503AE8528AD8B3600588133 /* AppDelegate.swift in Sources */,
 				F503AEBB28AD8CC700588133 /* UIView+Shadow.swift in Sources */,
+				F59B2C2D28B0FFF20088A308 /* OrderModel.swift in Sources */,
 				F503AE8728AD8B3600588133 /* SceneDelegate.swift in Sources */,
-				F59B2C2428B0E8AD0088A308 /* NetwoekError.swift in Sources */,
+				F59B2C2728B0EE010088A308 /* ItemsModel.swift in Sources */,
+				F59B2C2428B0E8AD0088A308 /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
