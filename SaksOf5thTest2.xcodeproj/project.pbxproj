@@ -30,6 +30,9 @@
 		F59B2C2728B0EE010088A308 /* ItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59B2C2628B0EE010088A308 /* ItemsModel.swift */; };
 		F59B2C2A28B0F44D0088A308 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59B2C2928B0F44D0088A308 /* Global.swift */; };
 		F59B2C2D28B0FFF20088A308 /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59B2C2C28B0FFF20088A308 /* OrderModel.swift */; };
+		F59B2C3028B10A0D0088A308 /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59B2C2F28B10A0D0088A308 /* ItemViewModel.swift */; };
+		F59B2C3228B10DF90088A308 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59B2C3128B10DF90088A308 /* BaseViewController.swift */; };
+		F5B8BC6E28B15CA200321A10 /* UIImageView+NetworkImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B8BC6D28B15CA200321A10 /* UIImageView+NetworkImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +86,9 @@
 		F59B2C2628B0EE010088A308 /* ItemsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsModel.swift; sourceTree = "<group>"; };
 		F59B2C2928B0F44D0088A308 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		F59B2C2C28B0FFF20088A308 /* OrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
+		F59B2C2F28B10A0D0088A308 /* ItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
+		F59B2C3128B10DF90088A308 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F5B8BC6D28B15CA200321A10 /* UIImageView+NetworkImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+NetworkImage.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +167,7 @@
 		F503AE8328AD8B3600588133 /* SaksOf5thTest2 */ = {
 			isa = PBXGroup;
 			children = (
+				F59B2C2E28B109EB0088A308 /* ViewModel */,
 				F59B2C2828B0F43C0088A308 /* Utils */,
 				F59B2C2528B0EDE80088A308 /* Models */,
 				F59B2C1E28B0E8550088A308 /* Network */,
@@ -196,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				F503AEBA28AD8CC700588133 /* UIView+Shadow.swift */,
+				F5B8BC6D28B15CA200321A10 /* UIImageView+NetworkImage.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -206,6 +214,7 @@
 				F59B2C1D28B0E8360088A308 /* collectionViewCells */,
 				F503AEBE28AD9C2D00588133 /* CartViewController.swift */,
 				F503AE8828AD8B3600588133 /* ViewController.swift */,
+				F59B2C3128B10DF90088A308 /* BaseViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -262,6 +271,14 @@
 				F59B2C2C28B0FFF20088A308 /* OrderModel.swift */,
 			);
 			path = responses;
+			sourceTree = "<group>";
+		};
+		F59B2C2E28B109EB0088A308 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F59B2C2F28B10A0D0088A308 /* ItemViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -511,10 +528,13 @@
 				F59B2C2A28B0F44D0088A308 /* Global.swift in Sources */,
 				F503AEBF28AD9C2D00588133 /* CartViewController.swift in Sources */,
 				F59B2C2028B0E8790088A308 /* Service.swift in Sources */,
+				F59B2C3028B10A0D0088A308 /* ItemViewModel.swift in Sources */,
 				F503AE8528AD8B3600588133 /* AppDelegate.swift in Sources */,
 				F503AEBB28AD8CC700588133 /* UIView+Shadow.swift in Sources */,
 				F59B2C2D28B0FFF20088A308 /* OrderModel.swift in Sources */,
+				F5B8BC6E28B15CA200321A10 /* UIImageView+NetworkImage.swift in Sources */,
 				F503AE8728AD8B3600588133 /* SceneDelegate.swift in Sources */,
+				F59B2C3228B10DF90088A308 /* BaseViewController.swift in Sources */,
 				F59B2C2728B0EE010088A308 /* ItemsModel.swift in Sources */,
 				F59B2C2428B0E8AD0088A308 /* NetworkError.swift in Sources */,
 			);
