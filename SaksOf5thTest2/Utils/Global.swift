@@ -8,3 +8,4 @@
 import Foundation
 
 let BASE_URL = "https://run.mocky.io/v3"
+let CART_ITEMS = "cart_items"

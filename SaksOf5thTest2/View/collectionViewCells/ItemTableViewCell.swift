@@ -20,5 +20,16 @@ class ItemTableViewCell: UICollectionViewCell {
         super.awakeFromNib()
       mainView?.dropShadow()
     }
+  
+  func configure(data: Item){
+    titleLabel?.text = data.name
+   // data.active ? "Active" : "Inactive"
+    itemImage?.setImage(with: data.image)
+    if(data.active){
+      statusLabel?.text = "Active"
+      statusLabel?.textColor = .systemGreen
+    }
+   
+  }
 }
 
